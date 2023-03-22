@@ -20,7 +20,7 @@ public class UserRepotoryTest {
     @Test
     public void testAddnew(){
         user u = new user();
-        u.setEmail("qwe");
+        u.setEmail("sp7");
         u.setPassword("12345678");
         u.setFirstName("Nguyen");
         u.setLastName("Duy");
@@ -36,6 +36,7 @@ public class UserRepotoryTest {
         Assertions.assertThat(users).hasSizeGreaterThan(0);
 
         for (user u:users){
+
             System.out.println(u);
         }
     }
